@@ -1,18 +1,18 @@
-{% include 'recipes/partials/myhead.html' %}
 
+{% extends 'globais/base.html' %}
 
+{% block content %}
 <body>
-    {% include 'recipes/partials/myheader.html' %}
-    {% include 'recipes/partials/searchform.html' %}
-    <main class="main-content-container">
+    
+    
         <div class="main-content main-content-list container">
             {%include 'recipes/partials/recipe.html'%} 
             {%include 'recipes/partials/recipe.html'%} 
             
               
-            </div>
+        </div>
         
-    </main>    
+{% endblock content %}    
     {%include 'recipes/partials/footer.html'%}   
     
 
